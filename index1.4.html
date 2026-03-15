@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潜江市楚乡香食品有限公司 - 传承荆楚风味</title>
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d43833', // 全新的品牌红
+                        primaryDark: '#b92c27', // 悬浮加深红
+                        secondary: '#fee2e2', // 浅红/粉色背景，用于标签和强调块
+                        surface: '#f8fafc', // 清新干净的浅灰底色
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-link { transition: all 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-surface">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="./img/logo.png" alt="楚乡香Logo" class="h-12 w-12 md:h-14 md:w-14 mr-3 rounded-xl shadow-sm">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900 tracking-wider">楚乡香食品</span>
+                </div>
+                <div class="hidden md:flex space-x-8 h-full items-center">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">首页</a>
+                    <a href="#products" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">产品中心</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">关于我们</a>
+                    <a href="#quality" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">质量认证</a>
+                    <a href="#news" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">新闻动态</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-primary h-full flex items-center border-b-2 border-transparent">联系我们</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">首页</a>
+                <a href="#products" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">产品中心</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">关于我们</a>
+                <a href="#quality" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">质量认证</a>
+                <a href="#news" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">新闻动态</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-3 text-gray-600 rounded-md transition font-medium">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative pt-20 h-screen flex items-center justify-center scroll-mt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="./img/bg.webp" alt="背景图" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-widest drop-shadow-lg">楚乡香食品</h1>
+            <p class="text-xl md:text-3xl text-gray-100 mb-8 font-light drop-shadow-md">传承荆楚风味 · 铸就匠心美味</p>
+            <p class="text-md md:text-lg text-gray-200 max-w-2xl mx-auto mb-10">来自“中国小龙虾之乡”湖北潜江，坚守民间古法工艺，锁住本真风味，为您带来安全、健康、美味的江汉平原特产。</p>
+            <a href="#products" class="inline-block bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-primaryDark transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">探索美味</a>
+        </div>
+    </header>
+
+    <section id="products" class="py-24 bg-white scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">产品中心</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-28">
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center">
+                    <div class="w-full lg:w-[60%] grid grid-cols-3 grid-rows-2 gap-2 sm:gap-4 h-[350px] sm:h-[450px]">
+                        <img src="./img/zgj-1.webp" alt="鲊胡椒 1" class="col-span-2 row-span-2 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/zgj-2.png" alt="鲊胡椒 2" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/zgj-3.png" alt="鲊胡椒 3" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                    </div>
+                    <div class="w-full lg:w-[40%]">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">鲊胡椒</h3>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">民间古法 老坛发酵</span>
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">米粉+红椒 纯粮纯鲜</span>
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">酸香鲜辣 复合风味</span>
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">解腻提味 百搭下饭</span>
+                        </div>
+                        <div class="text-gray-600 space-y-4 leading-relaxed text-[15px]">
+                            <p>传承江汉平原民间古老的 “鲊” 式发酵技法，以米粉、新鲜红辣椒为核心原料，搭配蒜、食用盐、植物油及香辛料，经洗净切碎、充分拌匀、入坛压实密封，再经传统老坛自然发酵而成，色泽金黄中点缀着鲜亮的红椒碎。</p>
+                            <p>风味兼具谷物的醇厚、辣椒的辛香与发酵带来的柔和酸鲜，口感松散不坨，油润适口。</p>
+                            <p>吃法十分百搭，可小火单炕当开胃小菜，也能搭配五花肉、肥肠、藕丁同炒，或是用来煮财鱼、蒸肉，无论是佐米饭还是配稀饭，都能解腻提味。</p>
+                            <p class="font-bold text-primary text-base">是湖北人餐桌上代代相传的家常灵魂美味，也承载着浓浓的荆楚乡愁。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row-reverse gap-10 lg:gap-14 items-center">
+                    <div class="w-full lg:w-[60%] grid grid-cols-3 grid-rows-2 gap-2 sm:gap-4 h-[350px] sm:h-[450px]">
+                        <img src="./img/ymx-2.png" alt="大蟹酱 2" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/ymx-1.jpeg" alt="大蟹酱 1" class="col-span-2 row-span-2 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/ymx-3.png" alt="大蟹酱 3" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                    </div>
+                    <div class="w-full lg:w-[40%]">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">油焖大蟹酱料</h3>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">鲜醇入骨 蟹香翻倍</span>
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">咸甜平衡 适口不腻</span>
+                            <span class="px-3 py-1 bg-secondary text-primary rounded-full text-sm font-semibold">一酱焖鲜 宴客无忧</span>
+                        </div>
+                        <ul class="text-gray-600 space-y-4 list-none leading-relaxed text-[15px]">
+                            <li class="pl-4 border-l-4 border-primary"><strong>秘制油焖大蟹酱：</strong> 一勺油焖大蟹酱，鲜醇入魂锁蟹香。</li>
+                            <li class="pl-4 border-l-4 border-primary"><strong>复合香气：</strong> 秘制复合酱香，咸甜适口不腻喉。</li>
+                            <li class="pl-4 border-l-4 border-primary"><strong>操作简单：</strong> 裹汁锁鲜，焖蟹秒出饭店级风味。</li>
+                            <li class="pl-4 border-l-4 border-primary"><strong>用途广泛：</strong> 一瓶多用，蟹鲜 / 虾香 / 花甲味全拿捏。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center">
+                    <div class="w-full lg:w-[60%] grid grid-cols-3 grid-rows-2 gap-2 sm:gap-4 h-[350px] sm:h-[450px]">
+                        <img src="./img/xlx-1.png" alt="香辣蟹酱 1" class="col-span-2 row-span-2 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/xlx-2.png" alt="香辣蟹酱 2" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/xlx-3.png" alt="香辣蟹酱 3" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                    </div>
+                    <div class="w-full lg:w-[40%]">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">香辣蟹酱料</h3>
+                        <ul class="text-gray-600 space-y-4 text-base font-medium">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>川湘风味 鲜辣麻醇</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>慢熬秘制 复合香气</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>激蟹鲜 去蟹腥 更入味</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>浓稠裹汁 丝丝吸味</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>无需调配方 直接用</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>一酱多用 百搭提味</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row-reverse gap-10 lg:gap-14 items-center">
+                    <div class="w-full lg:w-[60%] grid grid-cols-3 grid-rows-2 gap-2 sm:gap-4 h-[350px] sm:h-[450px]">
+                        <img src="./img/srx-2.jpeg" alt="虾仁酱 2" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/srx-1.jpeg" alt="虾仁酱 1" class="col-span-2 row-span-2 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/srx-3.png" alt="虾仁酱 3" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                    </div>
+                    <div class="w-full lg:w-[40%]">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">蒜蓉小龙虾仁酱</h3>
+                        <div class="grid grid-cols-1 gap-3 text-gray-600 text-sm">
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">真材实料：</strong> 颗颗虾仁可见</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">金蒜慢熬：</strong> 浓醇不腻不呛口</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">鲜蒜锁鲜：</strong> 虾香蒜香融合</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">开盖即食：</strong> 无需二次调味</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">百搭提鲜：</strong> 冷热食皆可</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base">咸鲜适口：</strong> 全家都爱吃</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center">
+                    <div class="w-full lg:w-[60%] grid grid-cols-3 grid-rows-2 gap-2 sm:gap-4 h-[350px] sm:h-[450px]">
+                        <img src="./img/lxl-1.png" alt="卤香料 1" class="col-span-2 row-span-2 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/lxl-2.png" alt="卤香料 2" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                        <img src="./img/lxl-3.png" alt="卤香料 3" class="col-span-1 row-span-1 w-full h-full object-cover rounded-2xl shadow-sm hover:shadow-md transition">
+                    </div>
+                    <div class="w-full lg:w-[40%]">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">卤香料</h3>
+                        <div class="grid grid-cols-1 gap-3 text-gray-600 text-sm">
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base block mb-0.5">卤料包</strong> 卤香浓郁</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base block mb-0.5">一料卤万物</strong> 百搭实用</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base block mb-0.5">老配方</strong> 零失败</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base block mb-0.5">家用卤料</strong> 便捷省心</div>
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100"><strong class="text-primary text-base block mb-0.5">秘制卤香</strong> 入味透骨</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-surface scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">关于我们</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-lg p-8 md:p-14 border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 border-b pb-4">公司简介</h3>
+                <h4 class="text-xl text-primary font-semibold mb-6">潜江市楚乡香食品有限公司：传承荆楚风味，铸就匠心美味</h4>
+                <div class="space-y-4 text-gray-600 leading-relaxed text-justify mb-12 text-[15px] md:text-base">
+                    <p>潜江市楚乡香食品有限公司坐落于 “中国小龙虾之乡”—— 湖北潜江渔洋镇，是一家以传承江汉平原民间风味为核心，集研发、生产、销售于一体的现代化食品企业。</p>
+                    <p>植根荆楚饮食文化，"中潜"品牌鲊胡椒以 “还原地道家乡味，让传统风味走向全国” 为使命。核心产品鲊胡椒坚守民间古法工艺，选用精品红辣椒与本地优质大米，经百天自然发酵，搭配速冻杀菌技术，锁住鲜醇酸辣的本真风味，成为承载中国人乡愁的经典美味。依托潜江小龙虾产业优势，公司于 2024 年拓展小龙虾酱料系列，融合本地大厨配方与现代工艺，推出麻辣、蒜蓉等多种口味，将小龙虾仁的鲜与大蒜的香辛融合，形成了风味独特的小龙虾仁蒜蓉酱，精准契合市场需求。</p>
+                    <p>如今，楚乡香产品不仅畅销本地市场，更通过电商平台走进千家万户，将江汉平原的风味名片推向全国。未来，公司将持续加大研发投入，丰富产品品类，深化 “企业 + 农户” 合作模式，带动周边农户共同发展，在传承民间美食文化的同时，为乡村振兴贡献产业力量，让更多人品味到荆楚大地的匠心风味与烟火温情。</p>
+                </div>
+
+                <div class="bg-red-50 p-6 md:p-8 rounded-2xl border border-red-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-7 h-7 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        公司愿景
+                    </h3>
+                    <p class="text-gray-800 font-medium text-lg leading-relaxed">
+                        楚乡香致力打造全国知名的荆楚特色食品品牌，让潜江地道风味享誉全国，以产业之力助乡村振兴，让乡土美味绽放更大品牌价值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quality" class="py-24 bg-white scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">质量与认证</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-8"></div>
+                <p class="text-gray-500 text-lg">始终将食品安全与健康放在首位</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-10 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-surface hover:bg-white group">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition duration-300">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">标准工艺</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">匠心熬制，传承古法与现代科技的完美结合，保障每一口都是地道美味。</p>
+                </div>
+                <div class="text-center p-10 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-surface hover:bg-white group">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition duration-300">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">全程溯源</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">品质可控，从田间到餐桌，每一份原材料均可追溯来源，让您吃得放心。</p>
+                </div>
+                <div class="text-center p-10 border border-gray-100 rounded-2xl hover:shadow-2xl transition duration-300 bg-surface hover:bg-white group">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition duration-300">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">多重检测</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">安全无忧，符合国家食品安全标准，历经多道严格质检流程出厂。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="py-24 bg-surface scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">新闻动态</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="#" class="block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="overflow-hidden">
+                        <img src="https://placehold.co/400x250/f8fafc/d43833?text=新闻配图1" alt="新闻1" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition leading-snug">楚乡香新一代蒜蓉小龙虾仁酱正式上市，引爆市场</h3>
+                        <p class="text-gray-400 text-sm">2026-03-12</p>
+                    </div>
+                </a>
+                <a href="#" class="block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="overflow-hidden">
+                        <img src="https://placehold.co/400x250/f8fafc/d43833?text=新闻配图2" alt="新闻2" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition leading-snug">深耕特色农业：公司“企业+农户”模式获媒体点赞</h3>
+                        <p class="text-gray-400 text-sm">2025-12-15</p>
+                    </div>
+                </a>
+                <a href="#" class="block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="overflow-hidden">
+                        <img src="https://placehold.co/400x250/f8fafc/d43833?text=新闻配图3" alt="新闻3" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition leading-snug">参加第XX届全国特色农产品展销会，鲊胡椒受热捧</h3>
+                        <p class="text-gray-400 text-sm">2025-11-08</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-gray-300 pt-20 pb-8 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">联系我们</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <span class="block text-sm text-gray-400 mb-1">联系电话</span>
+                                <span class="text-xl text-white font-medium">0728-6891188</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <span class="block text-sm text-gray-400 mb-1">公司地址</span>
+                                <span class="text-white leading-relaxed">湖北省潜江市渔洋镇五洲村6组88号</span>
+                                <a href="https://surl.amap.com/eEcdrsOPdCv" target="_blank" class="mt-2 text-primary hover:text-white transition text-sm flex items-center inline-flex">
+                                    查看厂址地图 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">官方店铺</h3>
+                    <p class="mb-5 text-sm text-gray-400">点击链接或扫描二维码进店选购：</p>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center text-gray-300 hover:text-primary transition group">
+                            <span class="w-2 h-2 bg-gray-600 group-hover:bg-primary rounded-full mr-3 transition"></span> 抖音官方旗舰店
+                        </a>
+                        <a href="#" class="flex items-center text-gray-300 hover:text-primary transition group">
+                            <span class="w-2 h-2 bg-gray-600 group-hover:bg-primary rounded-full mr-3 transition"></span> 小红书官方店铺
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">扫码关注</h3>
+                    <div class="flex space-x-6">
+                        <div class="text-center">
+                            <img src="https://placehold.co/150x150/ffffff/d43833?text=抖音二维码" alt="抖音二维码" class="w-24 h-24 rounded-lg bg-white p-1 mb-3 hover:scale-105 transition">
+                            <span class="text-sm text-gray-400">抖音店铺</span>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://placehold.co/150x150/ffffff/d43833?text=小红书二维码" alt="小红书二维码" class="w-24 h-24 rounded-lg bg-white p-1 mb-3 hover:scale-105 transition">
+                            <span class="text-sm text-gray-400">小红书店铺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>Copyright &copy; 2026 潜江市楚乡香食品有限公司. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. 手机端菜单切换逻辑
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // 2. 页面滚动监听器 (Scrollspy)
+        const sections = document.querySelectorAll('header, section, footer');
+        const navLinksDesktop = document.querySelectorAll('.nav-link');
+        const navLinksMobile = document.querySelectorAll('.mobile-nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 180)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                current = 'contact';
+            }
+
+            navLinksDesktop.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-primary');
+                link.classList.add('text-gray-600', 'border-transparent');
+                
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600', 'border-transparent');
+                    link.classList.add('text-primary', 'font-bold', 'border-primary');
+                }
+            });
+
+            navLinksMobile.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'bg-secondary');
+                link.classList.add('text-gray-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-primary', 'font-bold', 'bg-secondary', 'bg-opacity-50');
+                }
+            });
+        });
+
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+</html>
